@@ -13,6 +13,7 @@ hist(data1, breaks = bound, freq = FALSE, right = FALSE)
 
 #13
 library(readxl)
-entgend = read.csv('entgend.xls')
+entgend = read_excel('entgend.xlsx')
 men <- entgend$entertainment[entgend$gender == "male"]
 women <- entgend$entertainment[entgend$gender == "female"]
+mean(men)
