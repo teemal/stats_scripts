@@ -29,6 +29,11 @@ for(i in 1:10000){
 hist(p_hats)
 sd(p_hats)
 
+#2
+#a
+pnorm(75,70,1.58, lower.tail = FALSE) #10/sqrt(40)
+#b
+1 - pnorm(75,70, 10/sqrt(20))
 
 #example 3
 mean_x <- mean(textbooks$ucla_new)
@@ -39,3 +44,6 @@ x <- sort(x)
 y <- dnorm(x, mean_x, sd_x)
 hist(average_price, pr=T)
 lines(y ~ x)
+
+#3
+pnorm(1.3,1,.1925) - pnorm(.8,1,.1925)
